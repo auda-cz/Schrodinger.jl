@@ -6,4 +6,6 @@
 [![Coveralls](https://coveralls.io/repos/github/jebej/Schrodinger.jl/badge.svg?branch=master)](https://coveralls.io/github/jebej/Schrodinger.jl?branch=master)
 [![Codecov](https://codecov.io/gh/jebej/Schrodinger.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/jebej/Schrodinger.jl)
 
-Check the [documentation](https://jebej.github.io/Schrodinger.jl/latest)!
+Forked from [jebej](https://jebej.github.io/Schrodinger.jl). 
+
+Check the [documentation](https://auda-cz.github.io/Schrodinger.jl/latest)!
