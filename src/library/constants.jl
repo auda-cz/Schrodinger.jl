@@ -4,9 +4,9 @@ export ℎ, ħ, ℏ, 𝑒, Φ₀, ϕ₀, ln2,
 
 # Physical and mathematical constants
 const ℎ = 6.626069934E-34 # Planck constant, in Joules*seconds, NIST 2017
-const ħ = 1.054571783E-34 # Reduced Planck constant
+const ħ = 1.054571783E-34 # Reduced Planck constant \hbar
 const ℏ = ħ # Actual unicode symbol
-const 𝑒 = 1.6021766208E-19 # Elementary charge, in Coulomb, 2014 CODATA
+const 𝑒 = 1.6021766208E-19 # Elementary charge, in Coulomb, 2014 CODATA \ite
 const Φ₀ = 2.067833831E-15 # Magnetic flux quantum (ℎ/2𝑒), in Weber, 2014 CODATA
 const ϕ₀ = 3.291059757E-16 # Reduced flux quantum (ℏ/2𝑒), in Weber, 2014 CODATA
 const ln2 = 0.693147180559945309 # Natural logarithm of 2

@@ -2,6 +2,7 @@ module Schrodinger
 using LinearAlgebra, SparseArrays, Printf
 using Base: tail, front, product, promote_eltype
 using OrdinaryDiffEq, Optim
+using FFTW,Statistics
 
 # Export submodules
 export Gate
@@ -16,7 +17,7 @@ export Operator, Ket, Bra,
     fock, basis, coherent, thermal, maxentangled, maxmixed, ket, @qb_str,
     qzero, qeye, create, destroy, numberop, projectorop,
     displacementop, squeezeop,
-    rand_unitary,
+    rand_unitary,power_law_noise,
     Liouvillian, SchrodingerEvo, LindbladEvo,
     Propagator, SchrodingerProp, LindbladProp,
     sesolve, mesolve, lsolve, psolve, psteady,
@@ -60,6 +61,7 @@ include("misc/hermfact.jl")
 include("library/operators.jl")
 include("library/states.jl")
 include("library/random.jl")
+include("library/noise.jl")
 include("library/drivefuns.jl")
 include("library/constants.jl")
 include("library/gates.jl")
