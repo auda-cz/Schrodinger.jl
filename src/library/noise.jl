@@ -20,7 +20,7 @@ function power_law_noise(len::Integer, NoiseType)
     frequencies = FFTW.rfftfreq(len)
     # Adjust the amplitude of each frequency component according to the power law
     # Avoid division by zero for the first element
-    power_law_spectrum = white_noise_fft ./ (frequencies .+ 1e-10).^ (NoiseType / 2)
+    power_law_spectrum = white_noise_fft .* (frequencies .+ 1e-10).^ (NoiseType / 2)
     # Inverse FFT to get noise in time domain
     power_law_noise = real(FFTW.irfft(power_law_spectrum, len))
     # Center and normalize the noise
